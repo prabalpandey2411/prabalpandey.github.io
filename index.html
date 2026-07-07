@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Prabal Pandey — writer, Electronics & Telecom engineer, and web consultant in Navi Mumbai. Author of four books, published researcher, and website builder for local businesses.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2310162A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23C9A227' text-anchor='middle'%3EPP%3C/text%3E%3C/svg%3E">
+<title>Prabal Pandey — Writer, Engineer & Web Consultant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Prabal Pandey</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html">Blog</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow eyebrow-lede">Writer · Engineer · Web Consultant</p>
+        <h1>Ideas worth reading,<br><em>words worth feeling.</em></h1>
+        <svg class="hero-flourish" viewBox="0 0 210 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 14 C 40 2, 70 18, 105 9 S 170 2, 208 12" />
+        </svg>
+        <p class="hero-sub">I'm Prabal Pandey — I write books, publish research, build websites for local businesses, and occasionally say things in Urdu that can't quite be said in English.</p>
+        <div class="hero-cta">
+          <a href="books.html" class="btn btn-primary">Browse My Books</a>
+          <a href="about.html" class="btn btn-ghost">About Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="photo-frame">
+          <img src="photo.jpg" alt="Prabal Pandey" onerror="this.parentElement.classList.add('no-photo')">
+          <div class="photo-placeholder">PP</div>
+        </div>
+        <div class="social-float">
+          <a href="mailto:prrabalppandey@gmail.com" aria-label="Email" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </a>
+          <a href="https://www.instagram.com/prrabalwrites" target="_blank" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/theprrabal/" target="_blank" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick nav cards -->
+  <section class="quick-nav section-pad">
+    <div class="container">
+      <div class="cards-grid">
+        <a href="books.html" class="card reveal">
+          <div class="card-icon">📚</div>
+          <h3>Books</h3>
+          <p>3 eBooks & 1 hardcopy on Amazon — spanning poetry, philosophy & personal finance.</p>
+          <span class="card-link">View all books →</span>
+        </a>
+        <a href="research.html" class="card reveal">
+          <div class="card-icon">🔬</div>
+          <h3>Research Papers</h3>
+          <p>Published papers on 5G, IoT-based systems, and sustainable energy.</p>
+          <span class="card-link">Read papers →</span>
+        </a>
+        <a href="blog.html" class="card reveal">
+          <div class="card-icon">✍️</div>
+          <h3>Blog</h3>
+          <p>Thoughts on engineering, writing, personal growth, and life in between.</p>
+          <span class="card-link">Read posts →</span>
+        </a>
+        <a href="services.html" class="card reveal">
+          <div class="card-icon">🌐</div>
+          <h3>Web Services</h3>
+          <p>I build websites for local businesses. Professional, affordable, and delivered fast.</p>
+          <span class="card-link">See what I offer →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured book -->
+  <section class="featured-book section-pad alt-bg">
+    <div class="container featured-inner">
+      <div class="featured-text">
+        <p class="eyebrow">Latest Release</p>
+        <h2>How to Avoid Being Broke?</h2>
+        <p class="book-sub">A Journey Towards Your Goal</p>
+        <p>A practical, honest guide to financial awareness and purposeful goal-setting — written for young professionals who want more from life than just a salary.</p>
+        <a href="https://amzn.in/d/048aUwhO" target="_blank" class="btn btn-primary">Buy on Amazon →</a>
+      </div>
+      <div class="featured-badge">
+        <div class="book-badge">
+          <span class="badge-label">Available in</span>
+          <span class="badge-format">Hardcopy</span>
+          <span class="badge-sub">+ eBook</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry strip -->
+  <section class="enquiry-strip section-pad">
+    <div class="container enquiry-inner">
+      <div>
+        <h2>Have a question or project in mind?</h2>
+        <p>Whether it's a book, a website, or just a conversation — reach out.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="logo">Prabal Pandey</span>
+      <p>Writer · Engineer · Web Consultant<br>Navi Mumbai, India</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html">Blog</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="mailto:prrabalppandey@gmail.com">prrabalppandey@gmail.com</a>
+      <a href="https://www.instagram.com/prrabalwrites" target="_blank">@prrabalwrites</a>
+      <a href="https://www.linkedin.com/in/theprrabal/" target="_blank">linkedin.com/in/theprrabal</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Prabal Pandey. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

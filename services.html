@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Affordable, professional website design and local digital presence services for small businesses, by Prabal Pandey.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2310162A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23C9A227' text-anchor='middle'%3EPP%3C/text%3E%3C/svg%3E">
+<title>Web Services — Prabal Pandey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .why-card {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+  }
+  .why-card .w-icon { font-size: 2rem; margin-bottom: 12px; }
+  .why-card h4 { font-family: 'Fraunces', serif; font-size: 1rem; color: #fff; margin-bottom: 6px; }
+  .why-card p { color: rgba(255,255,255,0.55); font-size: 0.83rem; }
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+    position: relative;
+    margin-top: 40px;
+  }
+  .process-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background: var(--line);
+    z-index: 0;
+  }
+  .step {
+    text-align: center;
+    padding: 0 16px;
+    position: relative;
+    z-index: 1;
+  }
+  .step-num {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--saffron);
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    border: 3px solid var(--ivory-d);
+  }
+  .step h4 { font-family: 'Fraunces', serif; font-size: 0.98rem; margin-bottom: 6px; }
+  .step p { font-size: 0.8rem; color: var(--grey); }
+
+  @media (max-width: 640px) {
+    .why-grid { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .process-steps::before { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Prabal Pandey</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html">Blog</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="eyebrow" style="color:rgba(201,162,39,0.85)">For Local Businesses</p>
+    <h1>Web Design & Digital Presence</h1>
+    <p>I help local businesses get online — professionally, affordably, and without the jargon.</p>
+  </div>
+</div>
+
+<main>
+
+  <!-- Intro -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="services-hero-text" style="max-width:100%;text-align:left;padding:0;">
+        <p class="eyebrow">What I Do</p>
+        <h2 style="font-size:2rem;">Your business deserves to be found online.</h2>
+        <p style="color:var(--grey);max-width:60ch;margin-top:12px;margin-bottom:40px;">Most local businesses lose customers simply because they don't have a proper web presence. I build clean, fast, mobile-friendly websites that look professional and help people find and trust your business — without charging agency prices.</p>
+      </div>
+
+      <div class="services-grid" style="margin-top:0;">
+        <div class="service-card reveal">
+          <div class="service-icon">🌐</div>
+          <h3>Website Design & Development</h3>
+          <p>A professional website built from scratch, designed to represent your business accurately and attractively.</p>
+          <ul class="service-list">
+            <li>Custom design — no templates</li>
+            <li>Mobile-friendly & fast loading</li>
+            <li>Contact forms & enquiry pages</li>
+            <li>Google Maps integration</li>
+            <li>WhatsApp & social media links</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;text-align:center;display:block;">Get a Quote</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">📍</div>
+          <h3>Local SEO & Google Presence</h3>
+          <p>Make sure your business shows up when people search for what you offer in your area.</p>
+          <ul class="service-list">
+            <li>Google Business Profile setup</li>
+            <li>Local keyword optimisation</li>
+            <li>Business directory listings</li>
+            <li>Review management guidance</li>
+            <li>Location page creation</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;text-align:center;display:block;">Get a Quote</a>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">🔧</div>
+          <h3>Website Updates & Maintenance</h3>
+          <p>Already have a site? I can update content, fix issues, improve speed, and keep things running smoothly.</p>
+          <ul class="service-list">
+            <li>Content updates & edits</li>
+            <li>Performance improvements</li>
+            <li>Security & backup setup</li>
+            <li>New page additions</li>
+            <li>Ongoing support</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;text-align:center;display:block;">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why me — navy bg -->
+  <section class="section-pad" style="background:var(--navy);">
+    <div class="container">
+      <p class="eyebrow" style="color:rgba(201,162,39,0.85);text-align:center;">Why work with me?</p>
+      <h2 style="font-family:'Fraunces',serif;font-size:1.8rem;color:#fff;text-align:center;max-width:18ch;margin:0 auto;">An engineer's precision, a writer's clarity.</h2>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="w-icon">⚡</div>
+          <h4>Fast delivery</h4>
+          <p>Most projects are delivered within 2–3 weeks, not months.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="w-icon">💬</div>
+          <h4>Clear communication</h4>
+          <p>I explain everything in plain language — no tech jargon, no hidden surprises.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="w-icon">📱</div>
+          <h4>Mobile-first</h4>
+          <p>Every site looks and works great on phones — because that's where your customers are.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="w-icon">💰</div>
+          <h4>Affordable pricing</h4>
+          <p>Quality work at prices that make sense for local businesses and solo entrepreneurs.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="w-icon">🔄</div>
+          <h4>Easy to update</h4>
+          <p>I build sites you can update yourself, or I can handle changes for you.</p>
+        </div>
+        <div class="why-card reveal">
+          <div class="w-icon">🤝</div>
+          <h4>Long-term support</h4>
+          <p>I'm available after delivery — not just for the handover and goodbye.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section-pad alt-bg">
+    <div class="container">
+      <p class="eyebrow" style="text-align:center;">How it works</p>
+      <h2 style="font-family:'Fraunces',serif;font-size:1.8rem;text-align:center;margin-bottom:0;">Simple, step-by-step process</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Discovery Call</h4>
+          <p>We talk about your business, your goals, and what your website needs to do.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Design & Build</h4>
+          <p>I design and develop your site, keeping you updated at each stage.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Review & Refine</h4>
+          <p>You review, share feedback, and I make the changes until it's right.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Launch & Support</h4>
+          <p>Your site goes live, and I remain available for questions and updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section-pad">
+    <div class="container">
+      <p class="eyebrow">Past Work</p>
+      <h2 style="font-family:'Fraunces',serif;font-size:1.8rem;margin-bottom:28px;">Live websites I've built</h2>
+
+      <div class="portfolio-strip">
+        <div class="portfolio-item">
+          <div class="portfolio-info">
+            <h4>Shri Ganesh Residency</h4>
+            <p>Hotel / hospitality business · Designed, developed & published · Full website with enquiry form</p>
+          </div>
+          <a href="https://shriganeshresidency.in" target="_blank" class="btn btn-primary">Visit Site →</a>
+        </div>
+      </div>
+
+      <div style="margin-top:36px;padding:28px;background:var(--ivory-d);border-radius:10px;border:1px solid var(--line);">
+        <p style="color:var(--grey);font-size:0.9rem;">More projects coming soon. If you'd like your business to be the next one, get in touch.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="enquiry-strip section-pad">
+    <div class="container enquiry-inner">
+      <div>
+        <h2>Ready to get your business online?</h2>
+        <p>Send me a message and let's talk about what you need.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="logo">Prabal Pandey</span>
+      <p>Writer · Engineer · Web Consultant<br>Navi Mumbai, India</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html">Blog</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="mailto:prrabalppandey@gmail.com">prrabalppandey@gmail.com</a>
+      <a href="https://www.instagram.com/prrabalwrites" target="_blank">@prrabalwrites</a>
+      <a href="https://www.linkedin.com/in/theprrabal/" target="_blank">linkedin.com/in/theprrabal</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Prabal Pandey. All rights reserved.</p></div>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>

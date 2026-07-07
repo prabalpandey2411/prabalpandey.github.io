@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Blog by Prabal Pandey — writing on engineering, books, personal growth, and life in between. New posts coming soon.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2310162A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23C9A227' text-anchor='middle'%3EPP%3C/text%3E%3C/svg%3E">
+<title>Blog — Prabal Pandey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .category-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+  .cat-btn {
+    padding: 7px 18px;
+    border-radius: 100px;
+    border: 1px solid var(--line);
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    color: var(--grey);
+    transition: all 0.15s;
+  }
+  .cat-btn.active, .cat-btn:hover {
+    background: var(--saffron);
+    border-color: var(--saffron);
+    color: #fff;
+  }
+
+  .blog-post-full {
+    max-width: 680px;
+  }
+
+  .subscribe-box {
+    background: var(--navy);
+    color: #fff;
+    border-radius: 12px;
+    padding: 36px;
+    text-align: center;
+    margin-top: 48px;
+  }
+  .subscribe-box h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .subscribe-box p { color: rgba(255,255,255,0.65); max-width: 40ch; margin: 0 auto 22px; }
+  .subscribe-row {
+    display: flex;
+    gap: 10px;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  .subscribe-row input {
+    flex: 1;
+    padding: 11px 14px;
+    border-radius: var(--radius);
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Prabal Pandey</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <p class="eyebrow" style="color:rgba(201,162,39,0.85)">Thoughts, Ideas & Observations</p>
+    <h1>Blog</h1>
+    <p>Writing on engineering, books, personal growth, and everything in between.</p>
+  </div>
+</div>
+
+<main>
+  <section class="section-pad">
+    <div class="container">
+
+      <div class="category-bar">
+        <button class="cat-btn active">All</button>
+        <button class="cat-btn">Engineering</button>
+        <button class="cat-btn">Writing & Books</button>
+        <button class="cat-btn">Personal Growth</button>
+        <button class="cat-btn">Finance</button>
+        <button class="cat-btn">Life & Reflection</button>
+      </div>
+
+      <!-- Coming soon state — replace this section when you publish your first post -->
+      <div class="blog-coming">
+        <div class="big-icon">✍️</div>
+        <h3>Posts are on their way.</h3>
+        <p>I'm working on the first batch of articles — covering engineering, books, personal finance, and the messy stuff in between. Subscribe below to be the first to know.</p>
+        <a href="mailto:prrabalppandey@gmail.com?subject=Blog%20Notification&body=Please%20notify%20me%20when%20new%20posts%20are%20published." class="btn btn-primary">Notify Me by Email</a>
+      </div>
+
+      <!-- ============================================================
+           HOW TO ADD A BLOG POST:
+           1. Copy the block below, uncomment it, and fill in your content.
+           2. Delete or keep the "coming soon" block above as needed.
+           3. Add as many blog-card blocks as you like.
+      ============================================================
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="blog-img">💡</div>
+          <div class="blog-body">
+            <div class="blog-date">June 2025 · Engineering</div>
+            <h3>Your Post Title Here</h3>
+            <p>A short 1–2 line summary of what the post is about goes here.</p>
+            <a href="#" class="blog-link">Read more →</a>
+          </div>
+        </div>
+      </div>
+      ============================================================ -->
+
+      <div class="subscribe-box">
+        <h3>Stay updated</h3>
+        <p>New posts on engineering, writing, and life — delivered to your inbox.</p>
+        <a href="mailto:prrabalppandey@gmail.com?subject=Subscribe%20to%20Blog&body=Hi%20Prabal%2C%20please%20add%20me%20to%20your%20blog%20mailing%20list." class="btn btn-primary">Subscribe via Email →</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-left">
+      <span class="logo">Prabal Pandey</span>
+      <p>Writer · Engineer · Web Consultant<br>Navi Mumbai, India</p>
+    </div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
+      <a href="books.html">Books</a>
+      <a href="research.html">Research</a>
+      <a href="blog.html">Blog</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-social">
+      <a href="mailto:prrabalppandey@gmail.com">prrabalppandey@gmail.com</a>
+      <a href="https://www.instagram.com/prrabalwrites" target="_blank">@prrabalwrites</a>
+      <a href="https://www.linkedin.com/in/theprrabal/" target="_blank">linkedin.com/in/theprrabal</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Prabal Pandey. All rights reserved.</p></div>
+</footer>
+
+<script>
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
