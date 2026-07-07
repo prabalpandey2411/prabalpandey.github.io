@@ -3,11 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Four books by Prabal Pandey, available on Amazon India — spanning self-development, ocean life, poetry, and personal finance.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2310162A'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23C9A227' text-anchor='middle'%3EPP%3C/text%3E%3C/svg%3E">
 <title>Books — Prabal Pandey</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,7 +30,7 @@
 
 <div class="page-hero">
   <div class="container">
-    <p class="eyebrow" style="color:rgba(201,162,39,0.85)">Written & Published</p>
+    <p class="eyebrow" style="color:rgba(224,123,57,0.85)">Written & Published</p>
     <h1>Books</h1>
     <p>Four books spanning poetry, philosophy, and personal finance — all available on Amazon.</p>
   </div>
@@ -44,7 +42,7 @@
       <div class="books-grid">
 
         <!-- Book 1 -->
-        <div class="book-card reveal">
+        <div class="book-card">
           <div class="book-spine hardcopy" title="Hardcopy">📖</div>
           <div class="book-info">
             <h3>How to Avoid Being Broke? — A Journey Towards Your Goal</h3>
@@ -57,7 +55,7 @@
         </div>
 
         <!-- Book 2 -->
-        <div class="book-card reveal">
+        <div class="book-card">
           <div class="book-spine ebook" title="eBook">📱</div>
           <div class="book-info">
             <h3>Be Thyself</h3>
@@ -70,7 +68,7 @@
         </div>
 
         <!-- Book 3 -->
-        <div class="book-card reveal">
+        <div class="book-card">
           <div class="book-spine ebook" title="eBook">🌊</div>
           <div class="book-info">
             <h3>Imagining the Unimaginable: Life Inside the Ocean</h3>
@@ -83,7 +81,7 @@
         </div>
 
         <!-- Book 4 -->
-        <div class="book-card reveal">
+        <div class="book-card">
           <div class="book-spine ebook" title="eBook">🖊️</div>
           <div class="book-info">
             <h3>Just Something: A Book of 25 Poems</h3>
@@ -100,7 +98,7 @@
       <!-- Amazon CTA -->
       <div style="text-align:center;margin-top:48px;padding:36px;background:#fff;border:1px solid var(--line);border-radius:12px;">
         <p class="eyebrow">Find all books in one place</p>
-        <h3 style="font-family:'Fraunces',serif;font-size:1.4rem;margin-bottom:10px;">Available on Amazon India</h3>
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;margin-bottom:10px;">Available on Amazon India</h3>
         <p style="color:var(--grey);max-width:44ch;margin:0 auto 22px;">All titles are available as Kindle eBooks. The hardcopy of <em>How to Avoid Being Broke?</em> ships across India.</p>
         <a href="https://www.amazon.in/s?k=Prabal+Pandey" target="_blank" class="btn btn-primary">Search Prabal Pandey on Amazon →</a>
       </div>
@@ -128,16 +126,8 @@
       <a href="https://www.linkedin.com/in/theprrabal/" target="_blank">linkedin.com/in/theprrabal</a>
     </div>
   </div>
-  <div class="footer-bottom"><p>© 2026 Prabal Pandey. All rights reserved.</p></div>
+  <div class="footer-bottom"><p>© 2025 Prabal Pandey. All rights reserved.</p></div>
 </footer>
 
-<script>
-(function(){
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); } });
-  }, { threshold: 0.15 });
-  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
-})();
-</script>
 </body>
 </html>
